@@ -1,0 +1,130 @@
+:root {
+    --first: #D1884F;
+    --second: #008AAA;
+    --third: #3BBADB;
+}
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+main {
+    max-width: 70vw;
+    margin: auto;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-items-container {
+    float: left;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-item {
+    display: inline;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    gap: .5rem;
+    align-items: end;
+}
+
+.nav-link i {
+    font-size: 1.5em;
+}
+
+.nav-item:first-child .nav-link {
+    color: var(--first);
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 3rem 0;
+    height: 80vh;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.description-container {
+    max-width: 60%
+}
+
+.description-container h3 {
+    color: var(--third);
+    font-weight: 200;
+    margin: 0;
+}
+
+.description-container h1>span {
+    color: var(--first);
+}
+
+.description-container h1 {
+    color: var(--second);
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* align-items: center; */
+}
+
+.image-container img {
+    height: 15rem;
+    width: 10rem;
+    margin: 0 auto;
+    box-shadow: 50px 50px 50rem #3BBADB;
+    border-radius: 0 0 0 5rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.buttons-container button {
+    font-size: .9rem;
+    text-transform: capitalize;
+    padding: .3rem 1rem;
+}
+
+.btn-solid {
+    background-color: var(--third);
+    color: #fff;
+    border-color: transparent;
+    border-radius: 5px;
+}
+
+.btn-flat {
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: var(--third);
+    border-width: 1px;
+    color: var(--third);
+}
+
+.shadow {
+    background-color: var(--third);
+    opacity: .7;
+    height: 14rem;
+    width: 10rem;
+    position: absolute;
+    z-index: -1;
+    top: 1rem;
+    right: .7rem;
+    border-radius: 0 0 0 5rem;
+
+}
